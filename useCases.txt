@@ -1,0 +1,13 @@
+User wants to be able to input the correct answer into the app and the app tell me if I am correct
+User wants to solve several equations per each attempt at the game
+User wants to know how fast I completed each game attempt
+User wants to be able to challenge my friends and compete for best time
+User wants to have a track record of my progress in these games
+User wants to use FB as login for my account
+User wants to have more than two number in equation to increase difficulty
+User wants to select operators to increase difficulty
+User wants random numbers to be generated, such as each new attempt is unique
+User wants identical challenge to be delivered to his friend for completion
+User wants a way to compare his score to his friends score
+User wants a way to keep track score of win/losses vs a friend
+User wants difficulty to increase over time
