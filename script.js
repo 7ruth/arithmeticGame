@@ -163,7 +163,7 @@ function arithmeticGamePopulate () {
                         document.getElementById('congratulations').innerHTML = "You won in just "+ document.getElementById('timer').innerHTML + " seconds!!!\nYou answered " + game.questions + " questions.";
                         document.getElementById('gameContainer').style.display= "none";
                         document.getElementById('theEnd').style.display= "block";
-
+                        document.getElementById('retry').style.display= "block";
 
                     } else {
                         arithmeticGamePopulate();
