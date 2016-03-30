@@ -164,6 +164,7 @@ function arithmeticGamePopulate () {
                         document.getElementById('gameContainer').style.display= "none";
                         document.getElementById('theEnd').style.display= "block";
 
+
                     } else {
                         arithmeticGamePopulate();
                     }
