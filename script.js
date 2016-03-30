@@ -201,7 +201,7 @@ function arithmeticGamePopulate () {
 
           var whiteImg = new Image();
           whiteImg.onload = onWhiteImgLoad;
-          whiteImg.src = '/Users/Achieve/Desktop/Untitled4.png';
+          whiteImg.src = 'Untitled4.png';
 
           function onWhiteImgLoad() {
             setColorCanvas( '1', '#ff3411' );
