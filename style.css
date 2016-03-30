@@ -1,0 +1,153 @@
+html {
+  font-family: 'Lato';
+}
+
+.bonus {
+  position: relative;
+  top:60%;
+  width:10%;
+}
+
+
+#start {
+  color: white;
+  position: fixed;
+  width: 100%;
+  top:30vh;
+  background: white;
+  font-size: 8vw;
+  display: block;
+  border: none;
+  outline: none;
+}
+
+.rainbow-wordmark {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.rainbow-wordmark__canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 110%; /* canvas is 1100px, img is 1000 */
+}
+
+.rainbow-wordmark__image {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+#timer {
+  position:relative;
+  text-align: center;
+  font-size:1vw;
+}
+
+#gameContainer {
+  position: relative;
+  top: 5vh;
+  width:100%;
+  height: 100%;
+  display: none;
+}
+
+.equationContainer {
+  display: block;
+  font-size: 15vw;
+  width:100%;
+  height:1em;
+  text-align: center;
+}
+
+#equalsSign {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 8vw;
+  height: 1em;
+}
+
+#userAnswer {
+  display: block;
+  text-align: center;
+  width: 99%;
+  height: 1.5em;
+  font-size: 15vw;
+  font-family: 'Lato';
+  border-color: transparent;
+  outline: none;
+}
+
+#instructions {
+  color: rgba(122, 122, 122, 0.55);
+  position: fixed;
+  width: 40%;
+  top:50vh;
+  left:36.5%;
+  background: white;
+  font-size: 1.5vh;
+  display: block;
+}
+
+#start, #instructions {
+    animation: fadein 3.5s;
+    -moz-animation: fadein 3.5s; /* Firefox */
+    -webkit-animation: fadein 3.5s; /* Safari and Chrome */
+    -o-animation: fadein 3.5s; /* Opera */
+}
+
+details {
+  width:70%;
+}
+
+#userQuestionsNumber, #userTermNumber {
+  border: none;
+  outline: none;
+  text-align: center;
+  font-size: 1.25vh;
+}
+
+#theEnd {
+  text-align: center;
+  position:fixed;
+  display: none;
+  width: 100%;
+  top: 30vh;
+  font-size: 2vw;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
