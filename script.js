@@ -164,6 +164,15 @@ function arithmeticGamePopulate () {
                         document.getElementById('gameContainer').style.display= "none";
                         document.getElementById('theEnd').style.display= "block";
                         document.getElementById('retry').style.display= "block";
+                        document.getElementsByClassName('Finn')[0].style.display= "block";
+
+                        document.getElementById('retry').addEventListener('mouseover', function(){
+                              document.getElementsByClassName('Finn')[0].style.opacity= 1;
+                        });
+
+                        document.getElementById('retry').addEventListener('mouseout', function(){
+                              document.getElementsByClassName('Finn')[0].style.opacity= 0;
+                        });
 
                     } else {
                         arithmeticGamePopulate();
