@@ -149,12 +149,10 @@ details {
 
 .Finn {
   position: fixed;
-  left:-25%;
+  top: 30%;
+  left:10%;
   width: 60%;
   height: 60%;
-  background: url('Finn.png');
-  background-repeat: no-repeat;
-  background-position: center center;
   transition: opacity 1.5s;
   display:none;
   opacity: 0;
