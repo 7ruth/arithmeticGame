@@ -152,7 +152,7 @@ details {
   -o-flex: 1;
   flex: 1;
   font-size:2vw;
-  margin: 5vh 0 0 0;
+  margin: 5vh 0 auto;
 }
 
 #retry:hover {
