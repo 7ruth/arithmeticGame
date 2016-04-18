@@ -179,12 +179,12 @@ function arithmeticGamePopulate () {
                           function fadeOutEffect() {
                               var fadeTarget = document.getElementsByClassName('Finn')[0];
                               var fadeEffect = setInterval(function () {
-                                  if (fadeTarget.style.opacity > 1.5) {
+                                  if (fadeTarget.style.opacity > 1) {
                                       clearInterval(fadeEffect);
                                   } else {
-                                      fadeTarget.style.opacity += 0.5;
+                                      fadeTarget.style.opacity += 0.2;
                                   }
-                              }, 50);
+                              }, 100);
                           }
                               fadeOutEffect();
                         }
