@@ -172,14 +172,13 @@ function arithmeticGamePopulate () {
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-
                           function fadeOutEffect() {
                               var fadeTarget = document.getElementsByClassName('Finn')[0];
                               var fadeEffect = setInterval(function () {
-                                  if (fadeTarget.style.opacity > 0.99) {
+                                  if (fadeTarget.style.opacity > 1) {
                                       clearInterval(fadeEffect);
                                   } else {
-                                      fadeTarget.style.opacity += 0.1;
+                                      fadeTarget.style.opacity += 0.5;
                                   }
                               }, 100);
                           }
