@@ -142,12 +142,8 @@ details {
   text-align: center;
   width: 10vw;
   transition: 2s;
-  margin: 5vh;
 }
 
-#fb {
-  margin: 5vh;
-}
 
 #retry, #fb, #congratulations  {
   -webkit-flex: 1;
@@ -156,6 +152,7 @@ details {
   -o-flex: 1;
   flex: 1;
   font-size:2vw;
+  margin: 5vh 0 0 0;
 }
 
 #retry:hover {
