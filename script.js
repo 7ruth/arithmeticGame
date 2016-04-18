@@ -242,6 +242,10 @@ function arithmeticGamePopulate () {
           var isHovering = false;
           var t = 0;
 
+          if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+           isHovering = true;
+          }
+
           var rainbow = [];
           (function() {
             for ( var i=0; i < trailCount; i++ ) {
