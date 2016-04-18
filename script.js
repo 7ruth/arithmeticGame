@@ -186,7 +186,7 @@ function arithmeticGamePopulate () {
                                   }
                               }, 200);
                           }
-                              document.getElementsByClassName('Finn')[0].fadeOutEffect()
+                              fadeOutEffect();
                         }
 
                     } else {
