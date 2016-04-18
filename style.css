@@ -135,16 +135,20 @@ details {
 }
 
 #retry {
+  text-align: center;
   background-color: rgb(255, 93, 71);
   color: white;
   border-color: white;
   outline: none;
   transition: 2s;
   width: 5em;
+  opacity: 0;
+  margin:10vh auto auto auto;
+
 }
 
 
-#retry, #fb, #congratulations  {
+#fb, #congratulations  {
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
