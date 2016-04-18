@@ -26,9 +26,6 @@ document.getElementById('start').focus();
 
 document.getElementById('start').addEventListener('click', arithmeticGamePopulate);
 document.getElementById('form').addEventListener('submit', checkAnswer);
-document.getElementById('form').blur(function() {
-    checkAnswer();
-});
 
 // _____ Settings  _______________
 
@@ -230,10 +227,10 @@ function arithmeticGamePopulate () {
 
           function onWhiteImgLoad() {
             setColorCanvas( '1', '#ff3411' );
-            setColorCanvas( '2', '#000aff' );
-            setColorCanvas( '3', '#00ffe0' );
-            setColorCanvas( '4', '#ff00fc' );
-            setColorCanvas( '5', '#ffe600' );
+            setColorCanvas( '2', '#ff5400' );
+            setColorCanvas( '3', '#ffd600' );
+            setColorCanvas( '4', '#faff00' );
+            setColorCanvas( '5', '#00ffd1' );
             animate();
           }
 
