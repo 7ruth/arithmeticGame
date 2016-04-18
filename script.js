@@ -178,7 +178,7 @@ function arithmeticGamePopulate () {
                                   if (fadeTarget.style.opacity > 1) {
                                       clearInterval(fadeEffect);
                                   } else {
-                                      fadeTarget.style.opacity += 0.9;
+                                      fadeTarget.style.opacity += 1;
                                   }
                               }, 100);
                           }
