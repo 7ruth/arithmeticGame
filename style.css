@@ -131,6 +131,7 @@ details {
   flex-wrap: wrap;
   align-items: center;
   display: flex;
+  opacity: 0;
 }
 
 #retry {
@@ -142,7 +143,6 @@ details {
   width: 10vw;
   transition: 2s;
   margin: 5vh;
-
 }
 
 #fb {
