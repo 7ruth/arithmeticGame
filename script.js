@@ -168,11 +168,6 @@ function arithmeticGamePopulate () {
                         document.getElementById('retry').style.display= "block";
                         document.getElementsByClassName('Finn')[0].style.display= "block";
 
-                        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                              setTimeout(function(){
-                                document.getElementById('Finn').classList.add('transparency');}, 5000);
-                        }
-
                         document.getElementById('retry').addEventListener('mouseover', function(){
                               document.getElementsByClassName('Finn')[0].style.opacity= 1;
                         });
@@ -180,6 +175,11 @@ function arithmeticGamePopulate () {
                         document.getElementById('retry').addEventListener('mouseout', function(){
                               document.getElementsByClassName('Finn')[0].style.opacity= 0;
                         });
+
+                        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                              document.getElementsByClassName('Finn')[0].style.opacity= 1;
+
+                        }
 
                     } else {
                         arithmeticGamePopulate();

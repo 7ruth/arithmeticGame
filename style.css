@@ -153,15 +153,12 @@ details {
   left:10%;
   width: 60%;
   height: 60%;
-  transition: all 1.5s;
   display:none;
   opacity: 0;
+  transition: opacity 1.5s;
   z-index:-100;
 }
 
-.Finn.transparency::after {
-  opacity: 1;
-}
 
 @keyframes fadein {
     from {
