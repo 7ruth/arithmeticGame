@@ -159,12 +159,18 @@ function arithmeticGamePopulate () {
 
                     if (game.turn === game.questions) {
 
+
+
                         document.getElementById('gameContainer').style.display = "none";
                         document.getElementById('congratulations').innerHTML = "You won in just "+ document.getElementById('timer').innerHTML + " seconds!!!\nYou answered " + game.questions + " questions.";
                         document.getElementById('gameContainer').style.display= "none";
                         document.getElementById('theEnd').style.display= "block";
                         document.getElementById('retry').style.display= "block";
                         document.getElementsByClassName('Finn')[0].style.display= "block";
+
+                        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                              document.getElementsByClassName('Finn')[0].style.opacity= 1;
+                        }
 
                         document.getElementById('retry').addEventListener('mouseover', function(){
                               document.getElementsByClassName('Finn')[0].style.opacity= 1;
