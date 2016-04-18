@@ -169,7 +169,8 @@ function arithmeticGamePopulate () {
                         document.getElementsByClassName('Finn')[0].style.display= "block";
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                              document.getElementsByClassName('Finn')[0].style.opacity= 1;
+                              setTimeout(function(){
+                                document.getElementById('Finn').classList.add('transparency');}, 3000);
                         }
 
                         document.getElementById('retry').addEventListener('mouseover', function(){
