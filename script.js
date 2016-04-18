@@ -176,12 +176,12 @@ function arithmeticGamePopulate () {
 
                         function fadeOutEffect(fadeTarget) {
                             var fadeEffect = setInterval(function () {
-                                if (fadeTarget.style.opacity > 0.99) {
+                                if (fadeTarget.style.opacity > 1) {
                                     clearInterval(fadeEffect);
                                 } else {
-                                    fadeTarget.style.opacity += 0.01;
+                                    fadeTarget.style.opacity += 0.1;
                                 }
-                            }, 100);
+                            }, 300);
                         }
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
