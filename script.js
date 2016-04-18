@@ -184,7 +184,7 @@ function arithmeticGamePopulate () {
                                   } else {
                                       fadeTarget.style.opacity += 0.01;
                                   }
-                              }, 1000);
+                              }, 100);
                           }
                               fadeOutEffect();
                         }
