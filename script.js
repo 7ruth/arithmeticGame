@@ -181,7 +181,7 @@ function arithmeticGamePopulate () {
                                 } else {
                                     fadeTarget.style.opacity += 0.01;
                                 }
-                            }, 100);
+                            }, 10);
                         }
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
