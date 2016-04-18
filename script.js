@@ -179,7 +179,7 @@ function arithmeticGamePopulate () {
                           function fadeOutEffect() {
                               var fadeTarget = document.getElementsByClassName('Finn')[0];
                               var fadeEffect = setInterval(function () {
-                                  if (fadeTarget.style.opacity > 1) {
+                                  if (fadeTarget.style.opacity > 1.5) {
                                       clearInterval(fadeEffect);
                                   } else {
                                       fadeTarget.style.opacity += 0.5;
