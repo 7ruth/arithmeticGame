@@ -131,7 +131,6 @@ details {
   flex-wrap: wrap;
   align-items: center;
   display: flex;
-  opacity: 0;
 }
 
 #retry {
@@ -143,19 +142,20 @@ details {
   width: 10vw;
   transition: 2s;
   margin: 5vh;
+
 }
 
 #fb {
   margin: 5vh;
 }
 
-#retry,#fb,#congratulations  {
+#retry, #fb, #congratulations  {
   -webkit-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
   -o-flex: 1;
   flex: 1;
-  font-size: 2vw;
+  font-size:2vw;
 }
 
 #retry:hover {
