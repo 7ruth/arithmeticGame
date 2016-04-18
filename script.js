@@ -170,7 +170,7 @@ function arithmeticGamePopulate () {
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                               setTimeout(function(){
-                                document.getElementById('Finn').classList.add('transparency');}, 3000);
+                                document.getElementById('Finn').classList.add('transparency');}, 10000);
                         }
 
                         document.getElementById('retry').addEventListener('mouseover', function(){
