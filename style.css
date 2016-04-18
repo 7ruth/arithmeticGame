@@ -191,3 +191,9 @@ details {
         opacity: 1;
     }
 }
+
+.FormElement {
+  width: 2vw;
+  margin: 0 auto;
+
+}

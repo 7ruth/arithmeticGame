@@ -1,3 +1,12 @@
+<?php require 'php/connections.php'; ?>
+<?php
+
+  if(isset($_POST['Register'])) {
+
+
+  }
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +18,9 @@
 
 </head>
 <body>
+<?php echo '<p>Hello World</p>'; ?>
+
+<!-- testing PHP Stuff-->
 
 <form action="" method="post" name="RegisterForm" id="RegisterForm">
 <div class="formElement"> </div>

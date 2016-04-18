@@ -195,9 +195,12 @@ function arithmeticGamePopulate () {
        window.open('http://www.facebook.com/sharer.php?s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + url + '&p[images][0]=' + image, 'sharer', 'top=' + winTop + ',left=' + winLeft + ',toolbar=0,status=0,width=' + winWidth + ',height=' + winHeight);
    }
 
+
 //---------------------------------------------------------------------------------------------------
 // _____ Algebraic! (Word Rainbow Animation - credit MettaFizzy)  _______________
 // _____ Modifications from original code: canvas size and positioning as well as cross platform rendering, colors, amount of colors in the rainbow, word being animated  _______________
+
+
 
           var wordmark = document.querySelector('.rainbow-wordmark');
           var wordmarkImg = wordmark.querySelector('.rainbow-wordmark__image');
@@ -240,6 +243,13 @@ function arithmeticGamePopulate () {
           // ----- animate rainbow ----- //
 
           var isHovering = false;
+
+          // Detect what device is accessing the view
+
+           if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            isHovering = true;
+           }
+
           var t = 0;
 
           var rainbow = [];
