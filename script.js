@@ -158,7 +158,7 @@ function arithmeticGamePopulate () {
                         document.getElementById('gameContainer').style.display = "none";
                         document.getElementById('congratulations').innerHTML = "You won in just "+ document.getElementById('timer').innerHTML + " seconds!!!\nYou answered " + game.questions + " questions.";
                         document.getElementById('gameContainer').style.display= "none";
-                        document.getElementById('theEnd').style.display= "flex";
+                        document.getElementById('theEnd').style.opacity= 1;
                         document.getElementsByClassName('Finn')[0].style.display= "block";
 
                         document.getElementById('retry').addEventListener('mouseover', function(){

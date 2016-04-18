@@ -130,7 +130,8 @@ details {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  display: none;
+  display: flex;
+  opacity: 0;
 }
 
 #retry {
