@@ -26,6 +26,9 @@ document.getElementById('start').focus();
 
 document.getElementById('start').addEventListener('click', arithmeticGamePopulate);
 document.getElementById('form').addEventListener('submit', checkAnswer);
+document.getElementById('form').blur(function() {
+    checkAnswer();
+});
 
 // _____ Settings  _______________
 
@@ -33,7 +36,6 @@ document.getElementById('numberOfQuestions').addEventListener('submit', function
   event.preventDefault();
   game.questions = parseInt(document.getElementById('userQuestionsNumber').value);
   document.getElementById('userQuestionsNumber').value = "Settings Changed!";
-
 });
 
 document.getElementById('numberOfTerms').addEventListener('submit', function() {
@@ -125,8 +127,6 @@ function arithmeticGamePopulate () {
                 gameStart();
               }
 
-
-
               game.equation=[];
               // _____ Generate The Equation  _______________
               for (var i = 0; i<(game.equationLengthLimiter+(game.equationLengthLimiter-1)); i++){
@@ -148,12 +148,11 @@ function arithmeticGamePopulate () {
               document.getElementById('userAnswer').value = "";
 }
 
-
           // _____ Check User Input vs Solution  _______________
 
           game.userAnswer = parseInt(document.getElementById('userAnswer').value);
 
-          function checkAnswer() {
+  function checkAnswer() {
                     event.preventDefault();
                 if ((Math.round((document.getElementById('userAnswer').value * 1000)/10)/100).toFixed(2) == game.solution) {
 
@@ -175,6 +174,7 @@ function arithmeticGamePopulate () {
                         });
 
                         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
 
                           function fadeOutEffect() {
                               var fadeTarget = document.getElementsByClassName('Finn')[0];
