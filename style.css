@@ -141,6 +141,8 @@ details {
   outline: none;
   width: 10vw;
   transition: 2s;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
