@@ -3,22 +3,40 @@ html {
 }
 
 .bonus {
-  position: relative;
-  top:60%;
-  width:10%;
+  position:relative;
 }
 
+.mainMenuContainer {
+  display: flex;
+  margin: 10vh 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 #start {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
   color: rgba(122, 122, 122, 0.8)  ;
-  position: fixed;
-  width: 100%;
-  top:30vh;
   background: white;
   font-size: 8vw;
-  display: block;
   border: none;
   outline: none;
+  height: 20vh;
+}
+
+#instructions {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  color: rgba(122, 122, 122, 0.7);
+  background: white;
+  font-size: 1.5vh;
 }
 
 .rainbow-wordmark {
@@ -81,18 +99,7 @@ html {
   outline: none;
 }
 
-#instructions {
-  color: rgba(122, 122, 122, 0.7);
-  position: fixed;
-  width: 40%;
-  top:50vh;
-  left:36.5%;
-  background: white;
-  font-size: 1.5vh;
-  display: block;
-}
-
-#start, #instructions {
+#start, #instructions, #bonus {
     animation: fadein 3.5s;
     -moz-animation: fadein 3.5s; /* Firefox */
     -webkit-animation: fadein 3.5s; /* Safari and Chrome */
@@ -102,6 +109,7 @@ html {
 summary{
   border: none;
   outline: none;
+  font-size: 1.5vh;
 }
 
 details {
@@ -114,16 +122,15 @@ details {
   border: none;
   outline: none;
   text-align: center;
-  font-size: 1.25vh;
+  font-size: 1.5vh;
 }
 
 #theEnd {
-  text-align: center;
-  position:fixed;
+  margin: 10vh 0 auto;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   display: none;
-  width: 100%;
-  top: 30vh;
-  font-size: 2vw;
 }
 
 #retry {
@@ -132,15 +139,22 @@ details {
   border-color: white;
   outline: none;
   text-align: center;
-  position:fixed;
-  display: none;
-  width: 10%;
-  left:45%;
-  margin-left:auto;
-  margin-right:auto;
-  top: 50vh;
-  font-size: 2vw;
+  width: 10vw;
   transition: 2s;
+  margin: 5vh;
+}
+
+#fb {
+  margin: 5vh;
+}
+
+#retry,#fb,#congratulations  {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+  font-size: 2vw;
 }
 
 #retry:hover {
