@@ -18,14 +18,17 @@
 <!-- Start of the main code-->
 
   <button id="start">
-
+<!-- buttons usually don't have other elements in them other than img, button isn't even neccessary, why not just make a div? -->
   <h1 class="rainbow-wordmark">
+    <!-- this h1 doesn't look like it gets closed anywhere-->
   <canvas class="rainbow-wordmark__canvas" width="665" height="300"></canvas>
   <img class="rainbow-wordmark__image" src="Untitled4.png" alt="Algebraic!"/>
   </button>
 
   <div id="instructions">
     This is a math game that tests how fast you can solve a set of simple equations.
+    <!-- br tags are generally not good practice, as they're usually a stylistic choice rather than a content choice. -->
+    <!-- better might be to create p tags and then adjust padding/margin as neccessary -->
     <br>
     <br>+ Final answers need to be rounded to 2 decimal points
     <br>+ ex. 2.3333 = 2.33 || 2.6666 = 2.67

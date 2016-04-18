@@ -1,6 +1,8 @@
-
+// one thing to note off the bat: consistency for code indentation, i recommend 2 spaces for 1 tab.
 // _____ Define Vars  _______________
 
+// this is great, using a object to store all of the information you're going to need, after having received the prototyping class, how can we refactor this?
+// what pieces of information will we need to compartmentalize in the constructor?
 var game ={
   numbers:[],
   operators:[],
@@ -28,11 +30,12 @@ document.getElementById('start').addEventListener('click', arithmeticGamePopulat
 document.getElementById('form').addEventListener('submit', checkAnswer);
 
 // _____ Settings  _______________
-
 document.getElementById('numberOfQuestions').addEventListener('submit', function() {
   event.preventDefault();
   game.questions = parseInt(document.getElementById('userQuestionsNumber').value);
   document.getElementById('userQuestionsNumber').value = "Settings Changed!";
+  // there's a small bug with this line of code, what happens when i hit enter twice in a row in the settings?
+  // Better might be to create a new div and get rid of the text box as to not allow for user error
 
 });
 
@@ -45,7 +48,7 @@ document.getElementById('numberOfTerms').addEventListener('submit', function() {
   } else {
    game.equationLengthLimiter = parseInt(document.getElementById('userTermNumber').value);
   }
-
+// read above comment about hitting enter twice for this event.
   document.getElementById('userTermNumber').value = "Settings Changed!";
 });
 
@@ -62,8 +65,9 @@ function arithmeticGameSetUp () {
         // _____ Generate All The Questions _______________
 
               // _____ Function (Random Number and Operators)_______________
-
+              // i would place these functions in a separe file called helpers.js or something. YOu might find yourself needing this functionality as you scale? if you scale? Anywho, either way, seems like something that shouldn't be scoped within another function.
               function getRandomInt() {
+                // the fact that 7's are in this game makes it really hard.. lol
                   return Math.floor(Math.random() * (game.max - game.min + 1)) + game.min;
               }
 
@@ -129,6 +133,7 @@ function arithmeticGamePopulate () {
 
               game.equation=[];
               // _____ Generate The Equation  _______________
+              // would be cool if each question was an object made from a constructor!
               for (var i = 0; i<(game.equationLengthLimiter+(game.equationLengthLimiter-1)); i++){
                   if (i%2 === 0) {
                       game.equation.push(game.numbers[game.equationGeneratorCounterNumbers]);
@@ -142,6 +147,7 @@ function arithmeticGamePopulate () {
               var stringEquation = game.equation.toString();
               stringEquation = stringEquation.replace(/,/g," ");
               document.getElementById('equationContainer').innerHTML=stringEquation;
+              // did not know you could do that, very cool
               game.solution = Math.round(eval(stringEquation) * 100) / 100;
 
               // _____ Clear Input Box  _______________
@@ -199,8 +205,6 @@ function arithmeticGamePopulate () {
 //---------------------------------------------------------------------------------------------------
 // _____ Algebraic! (Word Rainbow Animation - credit MettaFizzy)  _______________
 // _____ Modifications from original code: canvas size and positioning as well as cross platform rendering, colors, amount of colors in the rainbow, word being animated  _______________
-
-
 
           var wordmark = document.querySelector('.rainbow-wordmark');
           var wordmarkImg = wordmark.querySelector('.rainbow-wordmark__image');
